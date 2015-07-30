@@ -1,0 +1,10 @@
+{
+  "name": "ImageUpload",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.10.2",
+    "express3-handlebars": "^0.5.2",
+    "jade": "^1.11.0",
+    "multer": "~0.1.6"
+  }
+}
