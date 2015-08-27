@@ -44,8 +44,8 @@
                 // They go in the order: minX, maxX, minY, maxY.
                 var widthDiff = parent.offsetWidth - el.width;
                 var heightDiff = parent.offsetHeight - el.height;
-                var restrictDim = [0,
-                    (widthDiff > 0) ? widthDiff: Math.abs(widthDiff),
+                var restrictDim = [(widthDiff < 0) ? widthDiff : 0,
+                    (widthDiff > 0) ? widthDiff: 0,
                     (heightDiff < 0) ?  heightDiff : 0, (heightDiff < 0) ? 0 : heightDiff ];
 
                 if (!Drag.o) {
