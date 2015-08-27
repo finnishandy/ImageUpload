@@ -11,7 +11,7 @@ global.appRoot = __dirname;
 
 app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
 app.set('view engine', 'hbs');
-app.use('/api/images', imageRouter);
+//app.use('/api/images', imageRouter);
 
 
 
@@ -49,11 +49,11 @@ app.get('/js/:id',function(req,res){
     res.sendfile("./js/" + req.params.id);
 });
 
-/*
+
 app.get('/api/images/:id',function(req,res){
     res.sendfile("./uploads/" + req.params.id);
 });
-*/
+
 app.get('/api/dimensions',function(req,res){
     res.json(dimensions);
 });
